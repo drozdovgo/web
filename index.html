@@ -3,30 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/style/style.css">
-    <link rel="icon" href="/images/icon.png">
-    <title>1exp</title>
+    <link rel="stylesheet" href="style.css">
+    <title>les2</title>
 </head>
 <body>
     <header>
-        <h1>Список дел</h1>
+        <p>Заполните обязательные поля, чтобы добавить данные в таблицу</p>
     </header>
     <main>
-        <form>  
-            <input type="text" placeholder="Новый элемент списка">
-            <button type="submit">Создать</button>
-            <button type="reset">Очистить</button>
-        </form>
         <div>
-            <ol>
-                <li><label><input type="checkbox">Почесать кошку <sub>от 24.08.2023</sub> </label><button>❌</button></li>
-                <li><label><input type="checkbox">Полить картошку <sub>от 24.08.2023</sub></label> <button>❌</button></li>
-                <li><label><input type="checkbox">Сложить в лукошко <sub>от 24.08.2023</sub></label> <button>❌</button></li>
-            </ol>
+            <label>Тип Камушек:</label>
+            <select>
+                <option>Сапфиры</option>
+                <option>Алмазы</option>
+                <option>Изумруды</option>
+            </select>
+        </div>
+        <div>
+            <form>
+                <label>Год:</label>
+                <input type = "date" />
+            </form>
+            <form>
+                <label>Количество:</label>
+                <input type="text"><label>❌</label>
+            </form>
+            <button>Отправить</button>
+        </div>
+        <div class = "hz">
+            <table border="1">
+                <caption>Добыча драгоценных камней</caption>
+                <thead>
+                    <tr>
+                        <th rowspan="2">Камушек</th>
+                        <th colspan="3">Год</th>
+                    </tr>
+                    <tr>
+                        <th>2010</th>
+                        <th>2012</th>
+                        <th>2014</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Сапфиры</td>
+                        <td rowspan="2">1483</td>
+                        <td>4532</td>
+                        <td>6743</td>
+                    </tr>
+                    <tr>
+                        <td>Рубины</td>
+                        <td>3835</td>
+                        <td>7482</td>
+                    </tr>
+                    <tr>
+                        <td>Алмазы</td>
+                        <td>683</td>
+                        <td colspan="2">238</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="4">
+                            Итого:  много миллионов
+                            <br>
+                            <ol type="I">
+                                <li>Итого по видам драгоценных камней: много тысяч</li>
+                                <ul>
+                                    <li><a href="">Сапфиров </a>немыслимое количество</li>
+                                    <li>Но <a href="">рубинов </a>под конец всё же больше</li>
+                                </ul>
+                                <li>Итого по полудрагоценным камням</li>
+                                <ul>
+                                    <li><a href="">Изумрудов </a>0</li>
+                                    <li><a href="">Топазов </a>0</li>
+                                    <li><a href="">Опалов </a>тоже 0</li>
+                                </ul>
+                            </ol>
+                        </td>
+                    </tr>
+
+                </tfoot>
+            </table>
         </div>
     </main>
-    <footer>
-        <h3>Copyright ©</h2>
-    </footer>
 </body>
 </html>
