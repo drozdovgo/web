@@ -1,22 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
     <title>Список дел</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Список дел</h1>
-    </header>
     <main>
-        <div class = "inp">
-            <input placeholder="Новый элемент списка">
+        <h1>Список дел</h1>
+        <form class="input-group">
+            <input type="text" placeholder="Новый элемент списка">
             <button type="submit" class="create">Создать</button>
             <button type="reset" class="clear">Очистить всё</button>
-        </div>
-
+        </form>
+        <ul class="todo-list">
+            <li class="todo-item">
+                <div class="item-main">
+                    <input type="checkbox" id="task1">
+                    <label for="task1" class="task">Почесать кошку</label>
+                </div>
+                <span class="date">от 14.08.2023</span>
+                <span class="delete">✕</span>
+            </li>
+            <li class="todo-item">
+                <div class="item-main">
+                    <input type="checkbox" id="task2">
+                    <label for="task2" class="task">Полить картошку</label>
+                </div>
+                <span class="date">от 04.05.2022</span>
+                <span class="delete">✕</span>
+            </li>
+            <li class="todo-item">
+                <div class="item-main">
+                    <input type="checkbox" id="task3">
+                    <label for="task3" class="task">Сложить в лукошко</label>
+                </div>
+                <span class="date">от 19.05.2022</span>
+                <span class="delete">✕</span>
+            </li>
+        </ul>
     </main>
+    <hr>
+    <footer>
+        <p>Copyright ©</p>
+    </footer>
+
 </body>
 </html>
